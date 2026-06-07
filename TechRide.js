@@ -28,7 +28,7 @@ class vehicle{
         this.vehicleType = vehicleType;
         this.status = status;
     }
-    
+
     calculateFare(distances) {
         if(this.vehicleType === "Motorbike"){
             return distances * 5000;
@@ -39,5 +39,7 @@ class vehicle{
 }
 let vehicle1 = new vehicle("V01", "Nguyen Van A", "Motorbike");
 let vehicle2 = new vehicle("V02", "Tran Thi B", "Car", "Maintenance");
+let vehicle3 = new vehicle("V03", "Phan Van C", "Car");
 console.log("Xe 1 tính tiền 10km:", vehicle1.calculateFare(10));
 console.log("Xe 2 tính tiền 10km:", vehicle2.calculateFare(10));
+console.log("Xe 3 tính tiền 10km:", vehicle3.calculateFare(10));
